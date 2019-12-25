@@ -26,3 +26,11 @@ def longest_words(words):
     max_len = len(max(words, key=len))
     return [word for word in words if len(word) == max_len]
 print(longest_words(words))
+
+
+def count_each_mark(punc_markk):
+    print("The number of" + " " + str(punc_markk) + " " + "mark in the file is" + " " + str(content.count(punc_markk)) + ".")
+punc_marks=("," "." "?" ";" "-" ":" "!")
+#print each markkkkk
+for i in range(0, len(punc_marks)):
+    count_each_mark(str(punc_marks[i]))
