@@ -44,3 +44,15 @@ def changeChar(f2, y):
             else:
                 b = b + '$'
                 f3 = f2.changeChar(b)
+def AlphaCount(f):
+    # adding variable which will count the letter
+    alphacount=0
+    # adding loop for reading each line
+    for line in f:
+        # adding another loop which will read each character in a line
+        for ch in line:
+            # Adding condition.True outcome means that text file includes at least one alphabetical character
+            if ch.isalpha()==True:
+                # if the statement is true, will be applied the following formula
+                alphacount=alphacount+1
+    return alphacount
