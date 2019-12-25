@@ -7,6 +7,7 @@ def findNumbers(content):
 print(findNumbers(content))
 
 def checkDate(date):
+    #test
     isDate = True
     day, month, year = date.split('/')
     try:
@@ -19,6 +20,12 @@ def checkDate(date):
 def testfunchayk():
     tebabarior = True
     return tebabarior
+
+
+def longest_words(words):
+    max_len = len(max(words, key=len))
+    return [word for word in words if len(word) == max_len]
+print(longest_words(words))
 
 
 def count_each_mark(punc_markk):
