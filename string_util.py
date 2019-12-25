@@ -7,6 +7,7 @@ def findNumbers(content):
 print(findNumbers(content))
 
 def checkDate(date):
+    #test
     isDate = True
     day, month, year = date.split('/')
     try:
