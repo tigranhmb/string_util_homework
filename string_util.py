@@ -34,3 +34,13 @@ punc_marks=("," "." "?" ";" "-" ":" "!")
 #print each markkkkk
 for i in range(0, len(punc_marks)):
     count_each_mark(str(punc_marks[i]))
+
+def changeChar(f2, y):
+    b = ''
+    for lines in f2:
+        for i in lines:
+            if i != y:
+                b = b + i
+            else:
+                b = b + '$'
+                f3 = f2.changeChar(b)
