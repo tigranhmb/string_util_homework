@@ -18,4 +18,12 @@ def checkDate(date):
 
 def testfunchayk():
     tebabarior = True
-    return tebabarior    
+    return tebabarior
+
+
+def count_each_mark(punc_markk):
+    print("The number of" + " " + str(punc_markk) + " " + "mark in the file is" + " " + str(content.count(punc_markk)) + ".")
+punc_marks=("," "." "?" ";" "-" ":" "!")
+#print each markk
+for i in range(0, len(punc_marks)):
+    count_each_mark(str(punc_marks[i]))
