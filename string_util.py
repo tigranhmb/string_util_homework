@@ -56,3 +56,13 @@ def AlphaCount(f):
                 # if the statement is true, will be applied the following formula
                 alphacount=alphacount+1
     return alphacount
+
+ def create_dictionary(word_list):
+        word_count = {}
+        for word in word_list:
+            if word in word_count:
+                word_count[word] += 1
+            else:
+                word_count[word] = 1
+                for key, value in sorted(word_count.items())
+                    print(key, value)
